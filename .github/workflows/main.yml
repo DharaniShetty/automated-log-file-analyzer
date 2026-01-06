@@ -1,0 +1,20 @@
+name: Automated Log File Analyzer
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  run-log-analyzer:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Make script executable
+        run: chmod +x scripts/log_analyzer.sh
+
+      - name: Run log analyzer script
+        run: ./scripts/log_analyzer.sh
