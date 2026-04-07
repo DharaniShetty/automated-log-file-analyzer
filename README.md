@@ -2,17 +2,36 @@
 
 A shell-based utility to analyze log files and generate summary reports for operational insights.
 
-## Features
-- Parses log files to identify errors and warnings
-- Generates a summarized report automatically
-- Ignores runtime files using .gitignore best practices
+## 🚀 Use Case
+Helps DevOps teams quickly identify errors and warnings from large log files during production troubleshooting.
 
-## Technologies Used
+## 🔧 Features
+- Parses log files to detect errors and warnings
+- Generates summarized reports automatically
+- Follows .gitignore best practices
+
+## 🛠 Technologies Used
 - Bash / Shell Scripting
+- Linux
 - Git & GitHub
-- Linux File System
 
-## How to Run
-```bash
-chmod +x scripts/log_analyzer.sh
-./scripts/log_analyzer.sh
+## 📂 Project Structure
+.
+├── scripts/
+│   └── log_analyzer.sh
+├── logs/
+└── README.md
+
+## ▶️ How to Run
+chmod +x scripts/log_analyzer.sh  
+./scripts/log_analyzer.sh  
+
+## 📊 Sample Output
+Errors: 10  
+Warnings: 25  
+Top Issue: Timeout Error  
+
+## 📌 Future Enhancements
+- Add alerting system
+- Integrate with monitoring tools
+- Schedule execution using cron jobs
